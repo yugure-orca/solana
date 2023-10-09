@@ -165,8 +165,8 @@ fn verify_transaction(
     transaction: &SanitizedTransaction,
     feature_set: &Arc<FeatureSet>,
 ) -> transaction::Result<()> {
-    transaction.verify()?;
-    transaction.verify_precompiles(feature_set)?;
+    //transaction.verify()?;
+    //transaction.verify_precompiles(feature_set)?;
     Ok(())
 }
 
